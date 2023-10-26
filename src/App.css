@@ -1,0 +1,65 @@
+::-webkit-scrollbar{
+  display: none;
+}
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the column width as needed */
+  grid-auto-rows: 400px; /* Adjust the row height as needed */
+  gap: 10px; /* Adjust the gap between items */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 50px;
+  align-items: flex-start;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd; 
+  padding: 10px; 
+  text-align: center;
+   transition: all 300ms ease-in-out;
+  
+  /* overflow: hidden; */
+}
+.grid-item:hover{
+  background: grey;
+  transform: scale(1.01);
+}
+.download{
+  transition: all 300ms ease;
+}
+.download:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  color: #fff;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin-bottom: 1rem;
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+.image {
+  max-width: 100%; /* Limit the image width to 100% of the container */
+  max-height: 100%; /* Limit the image height to 100% of the container */
+  object-fit: contain; /* Maintain the aspect ratio while covering the container */
+}
+.user-info {
+  margin-top: 1px; /* Add some spacing between the image and the user info */
+}
