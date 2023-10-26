@@ -43,9 +43,6 @@ const App= () => {
               className="download"
               onClick={() => handleShare(item.links.download)}
             >
-              <div>
-                <p>people</p>
-              </div>
               Share
             </button>
                <div className="user-info">
